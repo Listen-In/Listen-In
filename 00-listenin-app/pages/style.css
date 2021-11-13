@@ -1,7 +1,14 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(147, 133, 133);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+form {
+  width: 50%;
 }
 
 li {
@@ -71,5 +78,15 @@ list-style-type: none;
     display: block;
   }
   .dropdown-content a:hover {background-color: rgb(84, 68, 87)}
-  
+  /* form */
+  #middle {
+    padding-top: 10px;
+    left: 0;
+    line-height: 100px;
+    margin-top: 400px;
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    font-size: 30px;
+   }
   
