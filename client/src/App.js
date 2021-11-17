@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
   ApolloClient,
@@ -64,4 +64,15 @@ function App() {
   );
 }
 
-export default App;
+
+export default function App() {
+  useEffect(() => {
+    document.title = 'Digital Garage';
+  }, []);
+
+  return (
+    <MusicProvider>
+      <MusicComponent />
+    </MusicProvider>
+  );
+}
