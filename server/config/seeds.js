@@ -9,31 +9,31 @@ db.once('open', async () => {
     { name: 'Pop' },
     { name: 'Jazz' },
     { name: 'Heavy metal' },
-    { name: 'Musical' }
-    { name: 'Kpop'}
+    { name: 'Musical' },
+    { name: 'Kpop'},
     { name: 'Rhythm and blues' },
     { name: 'Hip hop' },
     { name: 'Folk' },
     { name: 'gaspel' },
-    { name: 'Classical' }
-    { name: 'Country'}
+    { name: 'Classical' },
+    { name: 'Country'},
     { name: 'Blues' },
     { name: 'Electronic' },
     { name: 'Calol' },
     { name: 'Gaspel' },
-    { name: 'Funk' }
-    { name: 'Instrumental'}
+    { name: 'Funk' },
+    { name: 'Instrumental'},
     { name: 'Disco' },
     { name: 'Opera' },
     { name: 'Dance' },
     { name: 'Orchestra' },
-    { name: 'Techno' }
-    { name: 'R&B'}
+    { name: 'Techno' },
+    { name: 'R&B'},
     { name: 'Swing' },
     { name: 'Progressive rock' },
     { name: 'Carol' },
     { name: 'Trance' },
-    { name: 'Latin' }
+    { name: 'Latin' },
     { name: 'Ballad'}
 
   ]);

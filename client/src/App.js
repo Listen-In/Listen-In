@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
   ApolloClient,
@@ -7,6 +7,10 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+
+import MusicComponent from './components/MusicComponent';
+// Importing our theme provider which will make our global state available to child components
+import MusicProvider from './utils/MusicContext';
 
 import Home from './pages/Home';
 import Detail from './pages/Detail';
@@ -60,4 +64,15 @@ function App() {
   );
 }
 
-export default App;
+
+export default function App() {
+  useEffect(() => {
+    document.title = 'Digital Garage';
+  }, []);
+
+  return (
+    <MusicProvider>
+      <MusicComponent />
+    </MusicProvider>
+  );
+}

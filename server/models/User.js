@@ -3,6 +3,16 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
 
+
+/*
+ * GET users listing.
+ */
+
+exports.list = function (req, res) {
+  res.send("respond with a resource");
+};
+
+
 const userSchema = new Schema({
   firstName: {
     type: String,
