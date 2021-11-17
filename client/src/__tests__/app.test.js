@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import MusicComponent from '../components/MusicComponent';
-import MusicProvider from '../utils/CarContext';
+import MusicProvider from '../utils/MusicContext';
 
 test('MusicComponent renders', () => {
   render(
