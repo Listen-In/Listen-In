@@ -22,7 +22,7 @@ function Login() {
         </label>
       </div>
 
-      <div className="container" style={{backgroundColor: "rgb(147, 133, 133)"}}>
+      <div className="container" style={{backgroundColor: "rgb(150, 82, 82)"}}>
         <button type="button" className="cancelbtn">Cancel</button>
       </div>
     </form>

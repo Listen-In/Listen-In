@@ -12,6 +12,7 @@ function Header() {
               <div className="dropdown-content">
                 <Link to="/login">Login</Link>
                 <Link to="/signup">Signup</Link>
+                <Link to="/blog">blog</Link>
               </div>
             </div>
           </ul>

@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(147, 133, 133);
+    background-color:rgb(159, 66, 66);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 h1 {
@@ -11,7 +11,7 @@ a{
 }
 /* Bordered form */
 form {
-    border: 3px solid rgb(147, 133, 133);
+    border: 3px solid rgb(159, 66, 66) ;
   }
   
   /* Full-width inputs */
@@ -20,13 +20,13 @@ form {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid rgb(147, 133, 133);
+    border: 1px solid rgb(159, 66, 66);
     box-sizing: border-box;
   }
   
   /* Set a style for all buttons */
   button {
-    background-color: #37ff00;
+    background-color: #0d38e654;
     color: rgb(0, 0, 0);
     padding: 14px 20px;
     margin: 8px 0;
