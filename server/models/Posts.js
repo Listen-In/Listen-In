@@ -5,6 +5,11 @@ const bcrypt = require('bcrypt');
 const Post = mongoose.model('Post', postSchema);
 
 const postSchema = new Schema({
+  musicGenre: {
+    type: String,
+    required: true,
+    trim: true
+  },
   youTube: {
     type: String,
     required: true,

@@ -1,11 +1,23 @@
 import React from 'react';
+import { Query } from 'react-apollo';
+import GraphCMSContent from '../services/graphcms';
+import Blog from "../pages/Blog"
 
-const DashboardView = props => {
-  return (
-    <>
-      This is the dashboard
-    </>
-  );
-};
+const Dashboard = props => {
+    return (
+      <>
+        <div className="container row mx-auto p-2">
+          <div className="col-8">
+            <Blog />
+          </div>
+          <div className="col-3 offset-2">
+            <div className="col-4 p-2 sidebar">
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  };
 
-export default DashboardView;
+
+export default Dashboard;

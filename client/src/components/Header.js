@@ -6,7 +6,7 @@ function Header() {
         <nav>
           <ul>
             <li><Link to="/">Listen In</Link></li>
-            <li><Link to="/whatsnew">What's new</Link></li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
             <li><Link to="/howitworks">Howitworks</Link></li><div class="dropdown">
               <button className="dropbtn">Profile</button>
               <div className="dropdown-content">
