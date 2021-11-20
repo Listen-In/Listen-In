@@ -1,4 +1,5 @@
 import React from 'react';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 /* import { BrowserRouter as Router, Route} from 'react-router-dom' */
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -12,16 +13,16 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <BrowserRouter>
-     <Header />
-      <Switch>
-              <Route exact path="/" component={HomeView} />
-              <Route path="/dashboard" component={Dashboard} />
-              <Route path="/login" component={Login} />
-              <Route path="/howto" component={How} />
-      </Switch>
-      <Footer />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomeView} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/login" component={Login} />
+          <Route path="/howto" component={How} />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
   );
 };
 

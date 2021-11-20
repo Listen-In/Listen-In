@@ -1,6 +1,5 @@
 import React from 'react';
 import { Query } from 'react-apollo';
-import GraphCMSContent from '../services/graphcms';
 import Blog from "../pages/Blog"
 
 const Dashboard = props => {

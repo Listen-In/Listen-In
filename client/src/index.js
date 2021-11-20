@@ -1,23 +1,31 @@
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  useQuery,
+  gql
+} from "@apollo/client";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+/* import * as serviceWorker from './serviceWorker'; */
 import dotenv from 'dotenv';
 
-import { ApolloProvider } from 'react-apollo';
-import ApolloClient from 'apollo-boost';
-
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
 dotenv.config();
 
-const apollo_client = new ApolloClient({
-  uri: process.env.REACT_APP_GCMS_URL
-});
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={ apollo_client }>
+    <ApolloProvider client={client}>
       <App />
-    </ApolloProvider>
+      </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+/* serviceWorker.unregister(); */

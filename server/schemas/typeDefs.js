@@ -7,7 +7,6 @@ const typeDefs = gql`
     title: String
     body: String
     url: String
-    classes: [Class]
   }
 
   type Query {

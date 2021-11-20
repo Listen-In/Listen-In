@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
-
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
-const Post = mongoose.model('Post', postSchema);
 
 const postSchema = new Schema({
   genre: {
@@ -27,6 +25,7 @@ const postSchema = new Schema({
   },
 });
 
+const Post = mongoose.model('Post', postSchema);
 
 
 module.exports = Post;
