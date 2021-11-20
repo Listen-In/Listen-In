@@ -5,22 +5,22 @@ const bcrypt = require('bcrypt');
 const Post = mongoose.model('Post', postSchema);
 
 const postSchema = new Schema({
-  musicGenre: {
+  genre: {
     type: String,
     required: true,
     trim: true
   },
-  youTube: {
+  url: {
     type: String,
     required: true,
     trim: true
   },
-  blogTitle: {
+  title: {
     type: String,
     required: true,
     trim: true
   },
-  blogContent: {
+  body: {
     type: String,
     required: true,
     unique: true

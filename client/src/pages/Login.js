@@ -5,7 +5,7 @@ function Login() {
   return (
     <form action="action_page.php" method="post">
       <div className="heading">
-        <h1><a href="./index.html">Listen in</a></h1>
+        <h1><a href="./index.html">Don't have a login yet? Sign up today!</a></h1>
       </div>
 
       <div class="container">

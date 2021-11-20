@@ -31,7 +31,7 @@ function Blog () {
     return (
       <form action="action_page.php" method="post" onSubmit={ e => { e.preventDefault(); createPost(); } } >
           <img src={logo} alt="Logo" />;
-          <p>Blog about your favorite music videos like popular songs like "Uptown Funk" by Bruno mars and many more! </p>
+          <p class="dash">Blog about your favorite music, featuring videos of popular songs like "Uptown Funk" by Bruno Mars! </p>
         <div class="container">
           <label for="uname"><b>Title</b></label>
           <input onChange={ e => setNewPost({
