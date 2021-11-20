@@ -7,6 +7,9 @@ import DashboardView from './views/Dashboard';
 /* import Header from "./components/Header"
 import Home from './pages/Home';
 import Login from './pages/Login'; */
+import Login from './pages/Login';
+import Blog from './pages/Blog';
+
 
 function App() {
   return (
@@ -34,7 +37,11 @@ function App() {
       <Route exact path="/login">
         <Login />
       </Route>
+      <Route exact path="/blog">
+      <Blog />
+    </Route>
     </Router>
+
   );
 } */
 
