@@ -9,6 +9,10 @@ body {
     font-size: 20px;
   }
   
+p {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
   a {
     display: block;
     padding: 8px;
@@ -36,6 +40,7 @@ body {
   /* drop down */
   .dropdown {
     position:absolute;
+    top: 20px;
     display: inline-block;
     color: white;
   }
@@ -77,4 +82,9 @@ body {
   }
   h2 {
     padding-top: 70px;
+  }
+  .sign {
+    height: 250px;
+    width: auto;
+    margin-inline-start: 35% 
   }

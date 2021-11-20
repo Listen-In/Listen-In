@@ -9,6 +9,9 @@ a{
     text-decoration: none;
     color: black;
 }
+.heading h1 a{
+  color: white;
+}
 /* Bordered form */
 form {
     border: 3px solid rgb(159, 66, 66) ;

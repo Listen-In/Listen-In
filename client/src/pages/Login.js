@@ -25,7 +25,14 @@ const Example = () => {
 
 function Login() {
   return (
+<<<<<<< HEAD
     <form method="post">
+=======
+    <form action="action_page.php" method="post">
+      <div className="heading">
+        <h1><a href="./index.html">Don't have a login yet? Sign up today!</a></h1>
+      </div>
+>>>>>>> ace31681c024ef2d56d48a31fea05ba195ec5f94
 
       <div class="container">
         <label for="uname"><b>Username</b></label>
