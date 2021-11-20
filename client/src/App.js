@@ -3,13 +3,11 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomeView from './views/Home';
-import DashboardView from './views/Dashboard';
+import Dashboard from './views/Dashboard';
 import Header from './components/Header'
-/* import Header from "./components/Header"
-import Home from './pages/Home';
-import Login from './pages/Login'; */
 import Login from './pages/Login';
-import Blog from './pages/Blog';
+import How from './pages/How';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -18,8 +16,11 @@ function App() {
      <Header />
       <Switch>
               <Route exact path="/" component={HomeView} />
-              <Route path="/dashboard" component={DashboardView} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/login" component={Login} />
+              <Route path="/howto" component={How} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 };

@@ -31,27 +31,27 @@ function Blog () {
     return (
       <form action="action_page.php" method="post" onSubmit={ e => { e.preventDefault(); createPost(); } } >
           <img src={logo} alt="Logo" />;
-          <p>Blog about your favorite music videos like popular songs like uptown funk by Bruno mars and many more!. </p>
+          <p>Blog about your favorite music videos like popular songs like "Uptown Funk" by Bruno mars and many more! </p>
         <div class="container">
           <label for="uname"><b>Title</b></label>
           <input onChange={ e => setNewPost({
                                   ...newPost,
                                   title: e.currentTarget.value
-                              }) } type="text" placeholder="Enter title ex: Stay by .." name="uname"  required></input>
+                              }) } type="text" placeholder="Enter a title for your post!" name="uname"  required></input>
           <label for="psw"><b>Music Genre</b></label>
           <input onChange={ e => setNewPost({
                                   ...newPost,
                                   genre: e.currentTarget.value
-                              }) } type="text" placeholder="type in your genre" name="psw" required></input>
+                              }) } type="text" placeholder="What genre is the song you're reviewing?" name="psw" required></input>
 
-          <label for="psw"><b>youtube video</b></label>
-          <input type="text" placeholder="enter video" name="psw" required></input>
+          <label for="psw"><b>YouTube URL</b></label>
+          <input type="text" placeholder="Enter the URL for your music video" name="psw" required></input>
 
           <label for="psw"><b>Comments</b></label>
           <input onChange={ e => setNewPost({
                                   ...newPost,
                                   body: e.currentTarget.value
-                              }) } type="text" placeholder="Enter thoughts about videos" name="psw" required></input>
+                              }) } type="text" placeholder="Tell us what you think of this song!" name="psw" required></input>
   
           <button type="submit">Submit</button>
         </div>
