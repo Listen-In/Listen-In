@@ -4,7 +4,7 @@ import './App.css';
 import Header from "./components/Header"
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Blog from './pages/Blog';
+import Signup from './pages/signup';
 
 
 
@@ -21,8 +21,8 @@ function App() {
       <Route exact path="/login">
         <Login />
       </Route>
-      <Route exact path="/blog">
-      <Blog />
+      <Route exact path="/signup">
+      <Signup />
     </Route>
     </Router>
 
