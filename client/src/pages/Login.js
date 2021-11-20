@@ -1,71 +1,51 @@
-import React, { useState } from 'react';
-import { useMutation } from '@apollo/client';
-import { Link } from 'react-router-dom';
-import { LOGIN } from '../utils/mutations';
-import Auth from '../utils/auth';
+import React from 'react';
+import './login.css';
+import { useMediaQuery } from 'react-responsive'
 
-function Login(props) {
-  const [formState, setFormState] = useState({ email: '', password: '' });
-  const [login, { error }] = useMutation(LOGIN);
+const Example = () => {
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+  const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+  const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      const mutationResponse = await login({
-        variables: { email: formState.email, password: formState.password },
-      });
-      const token = mutationResponse.data.login.token;
-      Auth.login(token);
-    } catch (e) {
-      console.log(e);
-    }
-  };
-
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
-  };
-
-  return (
-    <div className="container my-1">
-      <Link to="/signup">← Go to Signup</Link>
-
-      <h2>Login</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address:</label>
-          <input
-            placeholder="youremail@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        {error ? (
-          <div>
-            <p className="error-text">The provided credentials are incorrect</p>
-          </div>
-        ) : null}
-        <div className="flex-row flex-end">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </div>
-  );
+  return <div>
+    <h1>Device Test!</h1>
+    {isDesktopOrLaptop && <p>You are a desktop or laptop</p>}
+    {isBigScreen && <p>You  have a huge screen</p>}
+    {isTabletOrMobile && <p>You are a tablet or mobile phone</p>}
+    <p>Your are in {isPortrait ? 'portrait' : 'landscape'} orientation</p>
+    {isRetina && <p>You are retina</p>}
+  </div>
 }
 
-export default Login;
+function Login() {
+  return (
+    
+      <form  method="post">
+        <div className="heading">
+          <h1><a href="./index.html">Don't have a login yet? Sign up today!</a></h1>
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required></input>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required></input>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked" name="remember" />
+          <label>
+            Remember me
+          </label>
+        </div>
+
+        <div className="container" style={{ backgroundColor: "" }}>
+          <button type="button" className="cancelbtn">Cancel</button>
+        </div>
+      </form>
+      );
+}
+      export default Login;

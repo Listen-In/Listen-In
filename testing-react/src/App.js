@@ -22,4 +22,8 @@ function App() {
   );
 }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
 export default App;
