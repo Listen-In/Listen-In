@@ -4,15 +4,11 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
   /* navbar */
-  li {
+  link {
     float: left;
-    font-size: 20px;
+    font-size: 25px;
   }
   
-p {
-    font-size: 40px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
   a {
     display: block;
     padding: 8px;
@@ -40,14 +36,13 @@ p {
   /* drop down */
   .dropdown {
     position:absolute;
-    top: 20px;
     display: inline-block;
     color: white;
   }
   .dropbtn {
     background-color: #000000;
     color: white;
-    padding: 12px;
+    padding: 5px;
     font-size: 25px;
     border: none;
     cursor: pointer;
@@ -56,7 +51,7 @@ p {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgb(150, 82, 82) ;
+    background-color: rgb(150, 82, 82);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgb(111, 47, 47);
     z-index: 1;
@@ -83,8 +78,6 @@ p {
   h2 {
     padding-top: 70px;
   }
-  .sign {
-    height: 250px;
-    width: auto;
-    margin-inline-start: 35% 
+  button {
+      padding: 0%;
   }

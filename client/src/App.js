@@ -7,8 +7,10 @@ import HomeView from './views/Home';
 import Dashboard from './views/Dashboard';
 import Header from './components/Header'
 import Login from './pages/Login';
+import Signup from './pages/signup';
 import How from './pages/How';
 import Footer from './components/Footer'
+
 
 
 function App() {
@@ -26,26 +28,5 @@ function App() {
   );
 };
 
-/*stuff*/
-
-/* function App() {
-  return (
-    
-    <Router>
-      <Header />
-      <Route exact path="/">
-        <Home />
-      </Route>
-      
-      <Route exact path="/login">
-        <Login />
-      </Route>
-      <Route exact path="/blog">
-      <Blog />
-    </Route>
-    </Router>
-
-  );
-} */
 
 export default App;
